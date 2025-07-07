@@ -2,26 +2,45 @@
 React Portfolio (JSX, Vite, TailwindCSS, Flowbite)
 */
 
-// This is the base structure.
+This is the base folder structure.
 
-// src/
-// ├── assets/
-// ├── components/
-// │   ├── Navbar.jsx
-// │   ├── About.jsx
-// │   ├── Skills.jsx
-// │   ├── Visionary.jsx
-// │   ├── Projects.jsx
-// │   ├── Experience.jsx
-// │   ├── ContactMe.jsx
-// │   └── Footer.jsx
-// ├── pages/
-// │   └── Home.jsx
-// ├── App.jsx
-// ├── main.jsx
-// └── index.css
-
-// root/
-// ├── vite.config.js
-// ├── package.json
-// └── README.md
+portfolio/
+├── .flowbite-react/
+│            ├── .gitignore
+│            ├── class-list.json
+│            └── config.json
+├── .vscode/
+│       ├── extensions.json
+│       └── settings.json
+├── public/
+│   └── favicon.ico (or logo files)
+├── src/
+│   ├── assets/
+│   ├── api/
+│   ├── components/
+│   │   ├── common/
+│   ├── layout/                 # Header, Footer, Navbar, etc.
+│   │   └── Navbar.jsx           
+│   └── sections/               
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Visionary.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Experience.jsx
+│   │   ├── ContactMe.jsx
+│   │   └── Footer.jsx
+│   ├── pages/
+│   │   └── Home.jsx
+│   ├── routes/
+│   │   └── AppRoutes.jsx       # React Router setup
+│   ├── services/
+│   │   └── Api.js              # Axios configuration and API functions
+│   ├── store/
+│   │   └── UseStore.js         # Zustand state management
+│   ├── style/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css               # Tailwind base styles
+├── vite.config.js
+├── package.json
+└── README.md
