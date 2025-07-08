@@ -8,10 +8,11 @@ import {
   FaGitAlt,
   FaAws,
 } from 'react-icons/fa';
-import { SiRedux, SiMongodb, SiNetlify, SiReactquery ,SiExpress } from 'react-icons/si';
+import { SiRedux, SiMongodb, SiNetlify, SiReactquery, SiExpress } from 'react-icons/si';
 import { DiChrome } from 'react-icons/di';
-import { BiLogoVisualStudio  } from 'react-icons/bi';
+import { BiLogoVisualStudio } from 'react-icons/bi';
 import { GiBearFace } from "react-icons/gi";
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   const skillGroups = [
@@ -52,18 +53,26 @@ const Skills = () => {
           {skillGroups.map((group) => (
             <div
               key={group.title}
-              className="bg-white/5 border border-white/10 backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+              className="bg-white/5 border border-white/10 hover:border-[#4CC89D] backdrop-blur p-6 rounded-2xl shadow-md hover:shadow-[0_0_20px_#4CC89D] transition-all duration-300"
             >
               <h3 className="text-2xl font-semibold mb-6 text-white">{group.title}</h3>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 {group.skills.map((skill) => (
-                  <div
+                  <motion.div
                     key={skill.name}
-                    className="flex items-center gap-2 px-4 py-2 bg-[#1e293b] text-sm rounded-lg border border-white/10 hover:border-[#60fbc4] transition"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-center gap-2 px-4 py-2
+             bg-gradient-to-br from-[#1e293b] via-[#273549] to-[#0f172a]
+             text-sm rounded-lg border border-white/10
+             hover:border-[#60fbc4] hover:shadow-[0_0_12px_#60fbc4]
+             transition-all duration-300"
                   >
                     <span className="text-lg">{skill.icon}</span>
                     <span className="text-slate-200">{skill.name}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
