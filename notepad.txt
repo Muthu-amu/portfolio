@@ -1,17 +1,10 @@
 /*
-React Portfolio (JSX, Vite, TailwindCSS, Flowbite)
+React Portfolio (JSX, Vite, TailwindCSS)
 */
 
 This is the base folder structure.
 
 portfolio/
-├── .flowbite-react/
-│            ├── .gitignore
-│            ├── class-list.json
-│            └── config.json
-├── .vscode/
-│       ├── extensions.json
-│       └── settings.json
 ├── public/
 │   └── favicon.ico (or logo files)
 ├── src/
@@ -44,3 +37,69 @@ portfolio/
 ├── vite.config.js
 ├── package.json
 └── README.md
+
+This below is my folder setup for portfolio.
+
+ok i will attach my resume so take content from that for the below sections all and also polish if require then give me complete code 
+
+Navbar.jsx --> dummylogo on slight left and in center About , Skills, Visionar , Projects , Experience  --->(if anything req you can add)
+then rest sections content detail you can see from my resume 
+
+before generating code just confirm the content of each section then after my approval you can go for code generation after confirming all section content
+
+Projects Section:
+
+🏗️ BuildNexus – Construction Solutions Website
+🔹 Summary:
+A premier construction and building solutions platform designed as a modern, responsive frontend web app using React and Vite. It features modular architecture with reusable components, organized sections (About Us, Services, Testimonials, Pricing), and a focus on scalability, UX, and performance optimization.
+
+🔹 Tech Stack:
+React, Vite, Zustand, Tailwind CSS, TanStack Query, DaisyUI, SwiperJS, React Icons, HeroIcons
+
+🔹 Live Demo:
+https://build-nexus-frontend.vercel.app/
+
+🚚 Logistics Dashboard – MERN Stack
+🔹 Summary:
+A full-stack logistics dashboard that enables tracking, analysis, and data-driven insights for logistics operations. Features secure authentication, role-based access, Excel import/export, and real-time analytics visualized using ApexCharts.
+
+🔹 Frontend Stack:
+React, Vite, Ant Design, Zustand, TanStack Query, ApexCharts
+
+🔹 Backend Stack:
+Node.js, Express.js, MongoDB, JWT, Nodemailer, Multer, XLSX, Moment.js, Day.js
+
+🔹 Live Demo:
+https://logistics-dashboard-seven.vercel.app/login
+
+
+portfolio/
+├── public/
+│   └── favicon.ico (or logo files)
+├── src/
+│   ├── assets/
+│   ├── api/
+│   ├── components/
+│   │   ├── common/
+│   ├── layout/                 # Header, Footer, Navbar, etc.
+│   │   └── Navbar.jsx           
+│   └── sections/               
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Visionary.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Experience.jsx
+│   │   ├── ContactMe.jsx
+│   │   └── Footer.jsx
+│   ├── pages/
+│   │   └── Home.jsx
+│   ├── routes/
+│   │   └── AppRoutes.jsx       # React Router setup
+│   ├── style/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css               # Tailwind base styles
+├── vite.config.js
+├── package.json
+└── README.md
+
