@@ -1,6 +1,5 @@
-import { Navbar } from 'flowbite-react';
 
-const NavbarComponent = () => {
+const Navbar = () => {
   return (
     <>
     navbar
@@ -8,4 +7,4 @@ const NavbarComponent = () => {
   );
 };
 
-export default NavbarComponent;
+export default Navbar;
