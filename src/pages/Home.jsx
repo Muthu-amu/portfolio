@@ -1,4 +1,5 @@
 import About from "../components/About";
+import ContactMe from "../components/ContactMe";
 import Experience from "../components/Experience";
 import Navbar from "../components/layout/Navbar";
 import Projects from "../components/Projects";
@@ -15,6 +16,7 @@ const Home = () => {
             <Visionary />
             <Projects />
             <Experience />
+            <ContactMe />
         </>
     );
 };
