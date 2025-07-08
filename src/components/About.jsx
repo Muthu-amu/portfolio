@@ -1,22 +1,23 @@
 const About = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center bg-gray-50 py-16">
-      <div className="max-w-4xl mx-auto px-4 text-center md:text-left">
-        <h2 className="text-3xl font-bold text-blue-600 mb-6">About Me</h2>
-        <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          I'm <strong>A. Muthupandi</strong>, a passionate Junior Software Developer with 2.3 years of hands-on experience in crafting responsive, scalable, and user-focused web applications.
-          I specialize in modern web technologies including React.js, Node.js, Tailwind CSS, and AWS.
-          I’m driven by a strong sense of UI/UX, performance optimization, and collaborative team development.
+    <section className="w-full min-h-screen flex items-center justify-center bg-[#0f172a] text-slate-200 py-20 px-4">
+      <div className="max-w-4xl mx-auto text-center md:text-left space-y-6">
+        <h2 className="text-4xl font-bold tracking-wide text-[#60fbc4]">About Me</h2>
+
+        <p className="text-lg leading-relaxed">
+          I'm <strong>A. Muthupandi</strong>, a passionate Junior Software Developer with 2.3 years of hands-on
+          experience. I specialize in modern web technologies including React.js, Node.js, Tailwind CSS, and AWS.
         </p>
 
-        <p className="text-gray-700 text-base mb-8">
-          I've contributed to complex dashboards and interactive apps in the logistics and content management domains, and I'm always eager to learn new technologies and build innovative solutions.
+        <p className="text-base">
+          I’ve contributed to dashboards and web apps focused on performance, design, and scale. I enjoy building
+          clean and interactive user experiences and solving real-world problems through code.
         </p>
 
         <a
           href="/cv.pdf"
           download
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700 transition"
+          className="inline-block bg-[#60fbc4] text-black font-semibold px-6 py-3 rounded-lg hover:bg-[#7ae3ff] transition"
         >
           Download Resume
         </a>
