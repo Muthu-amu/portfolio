@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Navbar from "../components/layout/Navbar";
+import Skills from "../components/Skills";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Navbar />
             <About />
+            <Skills />
         </>
     );
 };
