@@ -6,7 +6,7 @@ const About = () => {
 
         <p className="text-lg leading-relaxed">
           I'm <strong>A. Muthupandi</strong>, a passionate Junior Software Developer with 2.3 years of hands-on
-          experience. I specialize in modern web technologies including React.js, Node.js, Tailwind CSS, and AWS.
+          experience, especially in React.js. I specialize in modern web technologies including React.js, Node.js, Tailwind CSS, and AWS.
         </p>
 
         <p className="text-base">
