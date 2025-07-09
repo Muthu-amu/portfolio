@@ -3,3 +3,85 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(270deg, #0f172a, #1e3a8a, #60fbc4, #0f172a);
+  background-size: 600% 600%;
+  animation: gradient-x 15s ease infinite;
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+
+@keyframes blob1 {
+  0% {
+    transform: translate(-400px, 0px) scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+  20% {
+    transform: translate(-200px, -40px) scale(1.1) rotate(-8deg);
+    opacity: 0.85;
+  }
+  40% {
+    transform: translate(-100px, 30px) scale(0.95) rotate(6deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(50px, -30px) scale(1.15) rotate(-10deg);
+    opacity: 0.9;
+  }
+  80% {
+    transform: translate(200px, 20px) scale(1.05) rotate(12deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(400px, 0px) scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+}
+
+
+@keyframes blob2 {
+  0% {
+    transform: translate(400px, 0px) scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+  20% {
+    transform: translate(200px, 40px) scale(1.1) rotate(8deg);
+    opacity: 0.85;
+  }
+  40% {
+    transform: translate(100px, -30px) scale(0.95) rotate(-6deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-50px, 30px) scale(1.15) rotate(10deg);
+    opacity: 0.9;
+  }
+  80% {
+    transform: translate(-200px, -20px) scale(1.05) rotate(-12deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-400px, 0px) scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+}
+
+.animate-blob1 {
+  animation: blob1 6s ease-in-out infinite alternate;
+}
+
+.animate-blob2 {
+  animation: blob2 6s ease-in-out infinite alternate;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+
