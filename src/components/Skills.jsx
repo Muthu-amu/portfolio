@@ -45,7 +45,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="w-full bg-[#0f172a] text-slate-200 py-20 px-4">
+    <section className="w-full bg-[#0f172a] text-slate-200 py-6 md:py-8 lg:py-16 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-[#60fbc4] mb-10 tracking-wide">Skills</h2>
 

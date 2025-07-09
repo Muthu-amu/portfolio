@@ -24,13 +24,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="w-full bg-[#0f172a] text-slate-200 py-20 px-4">
+    <section className="w-full bg-[#0f172a] text-slate-200 py-6 md:py-8 lg:py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-[#60fbc4] tracking-wide mb-14">
+        <h2 className="text-4xl font-bold text-[#60fbc4] tracking-wide mb-12">
           Projects
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}

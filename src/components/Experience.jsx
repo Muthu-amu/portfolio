@@ -26,16 +26,16 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section className="w-full bg-[#0f172a] text-slate-200 py-20 px-6">
+    <section className="w-full bg-[#0f172a] text-slate-200 py-6 md:py-8 lg:py-16 px-6">
       <div className="max-w-4xl mx-auto relative">
         {/* Timeline vertical line */}
         <div className="absolute left-4 top-0 h-full w-[2px] bg-gradient-to-b from-[#60fbc4] to-transparent md:left-6" />
 
-        <h2 className="text-4xl font-bold text-center mb-16 text-[#60fbc4] tracking-wide">
+        <h2 className="text-4xl font-bold text-center mb-12 text-[#60fbc4] tracking-wide">
           Experience
         </h2>
 
-        <div className="space-y-16 pl-10 md:pl-16">
+        <div className="space-y-10 pl-10 md:pl-16">
           {experienceData.map((exp, idx) => (
             <motion.div
               key={idx}
