@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Visionary', href: '#visionary' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
+    { name: 'About', target: 'about' },
+    { name: 'Skills', target: 'skills' },
+    { name: 'Visionary', target: 'visionary' },
+    { name: 'Projects', target: 'projects' },
+    { name: 'Experience', target: 'experience' },
   ];
 
   return (
@@ -26,9 +27,17 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-6 text-slate-200 font-medium">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="hover:text-[#60fbc4] transition-colors duration-300">
+              <Link
+                to={link.target}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                spy={true} // enables active tracking
+                activeClass="text-[#60fbc4] font-bold" // style for active link
+                className="cursor-pointer hover:text-[#60fbc4] transition-colors duration-300"
+              >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -38,9 +47,16 @@ const Navbar = () => {
         <ul className="md:hidden px-4 pb-4 space-y-4 bg-[#0f172a]/90 text-white border-t border-white/10">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} onClick={() => setIsOpen(false)} className="block hover:text-[#60fbc4]">
+              <Link
+                to={link.target}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onClick={() => setIsOpen(false)}
+                className="block cursor-pointer hover:text-[#60fbc4]"
+              >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
