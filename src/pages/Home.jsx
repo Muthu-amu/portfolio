@@ -12,7 +12,7 @@ import StarfieldBackground from "../components/common/StarfieldBackground";
 const Home = () => {
     return (
         <main className="relative bg-[#0f172a] min-h-screen  overflow-hidden">
-            
+
       <StarfieldBackground count={2000} />
 
       <div className="relative z-10">
