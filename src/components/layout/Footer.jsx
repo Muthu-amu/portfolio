@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex justify-center gap-6 flex-wrap">
           {/* Phone */}
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+919176804411"
             className="flex items-center gap-2 text-sm hover:text-[#60fbc4] transition"
           >
             <FiPhone size={18} /> Call Me
@@ -16,7 +16,7 @@ const Footer = () => {
 
           {/* Email */}
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:muthu.amu.mp@gmail.com"
             className="flex items-center gap-2 text-sm hover:text-[#60fbc4] transition"
           >
             <FiMail size={18} /> Send Email
@@ -24,7 +24,7 @@ const Footer = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="www.linkedin.com/in/a-muthupandi-998545136"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm hover:text-[#60fbc4] transition"
