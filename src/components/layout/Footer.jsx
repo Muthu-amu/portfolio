@@ -24,7 +24,7 @@ const Footer = () => {
 
           {/* LinkedIn */}
           <a
-            href="www.linkedin.com/in/a-muthupandi-998545136"
+            href="https://www.linkedin.com/in/a-muthupandi-998545136/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm hover:text-[#60fbc4] transition"
