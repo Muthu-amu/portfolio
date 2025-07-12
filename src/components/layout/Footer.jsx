@@ -3,7 +3,7 @@ import { FaLinkedin , FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#0f172a] text-slate-300 border-t border-white/10 py-10 px-4">
+    <footer className="w-full text-slate-300 border-t border-white/10 py-10 px-4">
       <div className="max-w-4xl mx-auto text-center space-y-6">
         <div className="flex justify-center gap-6 flex-wrap">
           {/* Phone */}

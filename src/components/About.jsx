@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="w-full flex items-center justify-center bg-[#0f172a] text-slate-200 pt-16 pb-10 md:pt-16 md:pb-10 lg:pt-22 lg:pb-14 px-4">
+    <section className="w-full flex items-center justify-center  text-slate-200 pt-16 pb-10 md:pt-16 md:pb-10 lg:pt-22 lg:pb-14 px-4">
       <div className="max-w-4xl mx-auto text-center md:text-left space-y-6">
         <h2 className="text-4xl font-bold tracking-wide text-[#60fbc4]">About Me</h2>
 

@@ -26,7 +26,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section className="w-full bg-[#0f172a] text-slate-200 py-6 md:py-8 lg:py-16 px-6">
+    <section className="w-full text-slate-200 py-6 md:py-8 lg:py-16 px-6">
       <div className="max-w-4xl mx-auto relative">
         {/* Timeline vertical line */}
         <div className="absolute left-4 top-0 h-full w-[2px] bg-gradient-to-b from-[#60fbc4] to-transparent md:left-6" />

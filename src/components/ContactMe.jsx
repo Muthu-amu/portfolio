@@ -19,7 +19,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="w-full bg-[#0f172a] text-slate-200 py-6 md:py-8 lg:py-16 px-4">
+    <section className="w-full text-slate-200 py-6 md:py-8 lg:py-16 px-4">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-[#60fbc4] tracking-wide mb-10">
           Contact Me
