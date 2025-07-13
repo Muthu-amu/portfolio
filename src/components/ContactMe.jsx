@@ -1,32 +1,30 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const ContactMe = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
+  const form = useRef();
 
-  const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+   toast.promise(
+      emailjs.sendForm(
+        "service_kl3wc7n",      
+        "template_2xcc088",     
+        form.current,
+        "QATmcOdfdxbCCCFPR"       
+      ),
+      {
+        loading: "Sending message...",
+        success: "Message sent successfully!",
+        error: "Something went wrong. Please try again.",
+      }
+    ).then(() => {
+      form.current.reset();
+    });
   };
-
-  const handleSubmit = (e) => {
-  e.preventDefault();
-  
-  const subject = encodeURIComponent(formData.subject);
-  const body = encodeURIComponent(
-    `Name: ${formData.name}\n` +
-    `Email: ${formData.email}\n` +
-    `Subject: ${formData.subject}\n\n` +
-    `Message:\n${formData.message}`
-  );
-  
-  const mailtoLink = `mailto:muthu.amu.mp@gmail.com?subject=${subject}&body=${body}`;
-  window.location.href = mailtoLink;
-};
 
   return (
     <section className="w-full text-slate-200 py-6 md:py-8 lg:py-16 px-4">
@@ -36,29 +34,26 @@ const ContactMe = () => {
         </h2>
 
         <motion.form
+          ref={form}
+          onSubmit={sendEmail}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          onSubmit={handleSubmit}
           className="bg-white/5 border border-[#4CC89D] backdrop-blur p-8 rounded-2xl shadow hover:shadow-[0_0_20px_#4CC89D] transition-all space-y-6"
         >
           <div className="flex flex-col sm:flex-row gap-4">
             <input
               type="text"
-              name="name"
+              name="from_name"
               placeholder="Your Name"
               required
-              value={formData.name}
-              onChange={handleChange}
               className="flex-1 px-4 py-3 bg-[#1e293b] text-slate-200 border border-white/10 rounded-md focus:outline-none focus:border-[#60fbc4]"
             />
             <input
               type="email"
-              name="email"
+              name="from_email"
               placeholder="Your Email"
               required
-              value={formData.email}
-              onChange={handleChange}
               className="flex-1 px-4 py-3 bg-[#1e293b] text-slate-200 border border-white/10 rounded-md focus:outline-none focus:border-[#60fbc4]"
             />
           </div>
@@ -68,18 +63,14 @@ const ContactMe = () => {
             name="subject"
             placeholder="Subject"
             required
-            value={formData.subject}
-            onChange={handleChange}
             className="w-full px-4 py-3 bg-[#1e293b] text-slate-200 border border-white/10 rounded-md focus:outline-none focus:border-[#60fbc4]"
           />
 
           <textarea
             name="message"
-            placeholder="Your Message"
             rows="5"
+            placeholder="Your Message"
             required
-            value={formData.message}
-            onChange={handleChange}
             className="w-full px-4 py-3 bg-[#1e293b] text-slate-200 border border-white/10 rounded-md focus:outline-none focus:border-[#60fbc4] resize-none"
           />
 
