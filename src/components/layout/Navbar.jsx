@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-scroll';
+import { FaLaptopCode } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-[#0f172a]/70 border-b border-white/10">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 py-3 text-white">
-        <div className="text-xl font-bold tracking-wide text-[#60fbc4]">DummyLogo</div>
-
+        <FaLaptopCode className="text-[#60fbc4] text-3xl hover:text-[#7ae3ff] transition-colors" />
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-white">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
