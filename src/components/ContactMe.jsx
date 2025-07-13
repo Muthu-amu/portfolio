@@ -14,9 +14,19 @@ const ContactMe = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Form submission is currently disabled.\nFeel free to contact me via LinkedIn or email!');
-  };
+  e.preventDefault();
+  
+  const subject = encodeURIComponent(formData.subject);
+  const body = encodeURIComponent(
+    `Name: ${formData.name}\n` +
+    `Email: ${formData.email}\n` +
+    `Subject: ${formData.subject}\n\n` +
+    `Message:\n${formData.message}`
+  );
+  
+  const mailtoLink = `mailto:muthu.amu.mp@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = mailtoLink;
+};
 
   return (
     <section className="w-full text-slate-200 py-6 md:py-8 lg:py-16 px-4">
