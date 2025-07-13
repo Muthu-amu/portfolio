@@ -75,7 +75,7 @@ const ContactMe = () => {
 
           <button
             type="submit"
-            className="bg-[#60fbc4] text-black font-medium px-6 py-3 rounded-md hover:bg-[#7ae3ff] transition"
+            className="bg-[#60fbc4] text-black font-medium px-6 py-3 rounded-md hover:bg-[#7ae3ff] transition cursor-pointer"
           >
             Send Message
           </button>

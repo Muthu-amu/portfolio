@@ -1,26 +1,25 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const experienceData = [
   {
-    role: 'Junior Software Developer',
-    company: 'Zsoft Consultancy Services',
-    period: '2022 – 2025',
+    role: "Junior Software Developer",
+    company: "Zsoft Consultancy Services",
+    period: "2022 – 2025",
     description:
-      'Built scalable dashboards (CMS, Logistics) with role-based auth, Excel import/export, and analytics using React, Zustand, TanStack Query, MongoDB, and AWS.',
+      "Developed front-end components focusing on UI/UX enhancement and API integration. Improved API response times through code optimization. Led a team of three developers ensuring code quality and scalable architecture. Actively participated in sprint planning, code reviews, and feature implementation for successful project delivery.",
   },
+  { 
+  role: "Frontend Developer – Minagaram", 
+  company: "Zsoft Consultancy Services", 
+  period: "2022 – 2025", 
+  description: "Developed dynamic user interfaces using React, Zustand, Context API, and Redux. Leveraged Ant Design to create aesthetically pleasing and consistent UI components. Built server-side logic with Node.js and managed data using MongoDB. Utilized AWS S3 for file storage and EC2 for scalable computing. Used GitLab and Git for collaboration and code integrity.", 
+},
   {
-    role: 'AR&D Executive',
-    company: 'CAPLIN STERILES LIMITED',
-    period: '2021 – 2022',
+    role: "Freelance Developer – Construction Solutions Website",
+    company: "BuildNexus",
+    period: "2025",
     description:
-      'Prepared technical reports and supported research documentation using IT tools and data visualization for pharmaceutical analytics.',
-  },
-  {
-    role: 'Chemist',
-    company: 'SGS India Pvt Ltd',
-    period: '2019 – 2021',
-    description:
-      'Performed chemical testing, ensured lab compliance, and reported findings for pharmaceutical product analysis.',
+      "Developed a responsive construction CMS with dynamic sections (About, Services, Testimonials, Pricing). Built using React, Zustand, Tailwind CSS, DaisyUI, and SwiperJS.",
   },
 ];
 
