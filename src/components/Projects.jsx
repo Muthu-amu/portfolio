@@ -18,7 +18,7 @@ const projects = [
     techStack: [
       'React', 'Node.js', 'MongoDB', 'Ant Design', 'ExcelJS', 'ApexCharts',
     ],
-    link: 'https://logistics-dashboard-seven.vercel.app/login',
+    link: 'https://logistics-dashboard-sand.vercel.app/',
   },
 ];
 
