@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'BuildNexus – Construction Solutions Website',
     description:
-      'A responsive construction web platform with component-based architecture, API integration, Swiper sliders, and reusable sections. Built with performance and modular design in mind.',
+      'Developed a construction solutions web platform with component-based architecture, API integration, Swiper sliders, and reusable sections. Currently enhancing the design for full responsiveness across devices.',
     techStack: [
       'React', 'Zustand', 'Tailwind CSS', 'DaisyUI', 'SwiperJS', 'TanStack Query',
     ],
