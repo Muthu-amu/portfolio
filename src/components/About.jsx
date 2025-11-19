@@ -5,8 +5,8 @@ const About = () => {
         <h2 className="text-4xl font-bold tracking-wide text-[#60fbc4]">About Me</h2>
 
         <p className="text-lg leading-relaxed">
-          I'm <strong>A. Muthupandi</strong>, a passionate Junior Software Developer with 2.3 years of hands-on
-          experience, especially in React.js. I specialize in modern web technologies including React.js, Node.js, Tailwind CSS, and AWS.
+          I'm <strong>A. Muthupandi</strong>, a passionate Software Developer with 3 years of hands-on
+          experience, especially in React.js. I specialize in modern web technologies including React.js, Node.js, express.js, MongoDB, and AWS.
         </p>
 
         <p className="text-base">

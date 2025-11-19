@@ -2,25 +2,26 @@ import { motion } from "framer-motion";
 
 const experienceData = [
   {
+    role: "Software Developer (Contract)",
+    company: "Adeptrite Solution Pvt Ltd",
+    period: "Apr 2025 – Present",
+    description:
+      "Worked as a contract developer on MERN stack projects including a full-fledged Logistics Analytics Dashboard featuring Excel import/export, ApexCharts visualizations, and AWS deployment. Contributed to Hospital CRM core modules (Doctor, Patient, Appointment flows). Developed both frontend (React.js, Zustand, TanStack Query) and backend (Express.js, MongoDB) with reusable architecture and performance optimization.",
+  },
+  {
     role: "Junior Software Developer",
     company: "Zsoft Consultancy Services",
-    period: "2022 – 2025",
+    period: "Dec 2022 – March 2025",
     description:
       "Developed front-end components focusing on UI/UX enhancement and API integration. Improved API response times through code optimization. Led a team of three developers ensuring code quality and scalable architecture. Actively participated in sprint planning, code reviews, and feature implementation for successful project delivery.",
   },
-  { 
-  role: "Frontend Developer – Minagaram", 
-  company: "Zsoft Consultancy Services", 
-  period: "2022 – 2025", 
-  description: "Developed dynamic user interfaces using React, Zustand, Context API, and Redux. Leveraged Ant Design to create aesthetically pleasing and consistent UI components. Built server-side logic with Node.js and managed data using MongoDB. Utilized AWS S3 for file storage and EC2 for scalable computing. Used GitLab and Git for collaboration and code integrity.", 
-},
-  {
-    role: "Freelance Developer – Construction Solutions Website",
-    company: "BuildNexus",
-    period: "2025",
-    description:
-      "Developed a responsive construction CMS with dynamic sections (About, Services, Testimonials, Pricing). Built using React, Zustand, Tailwind CSS, DaisyUI, and SwiperJS.",
-  },
+  // {
+  //   role: "Frontend Developer – Construction Solutions Website",
+  //   company: "BuildNexus",
+  //   period: "2025",
+  //   description:
+  //     "Developed a responsive construction CMS with dynamic sections (About, Services, Testimonials, Pricing). Built using React, Zustand, Tailwind CSS, DaisyUI, and SwiperJS.",
+  // },
 ];
 
 const Experience = () => {
